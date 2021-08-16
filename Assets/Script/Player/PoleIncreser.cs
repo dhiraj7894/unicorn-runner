@@ -83,18 +83,23 @@ public class PoleIncreser : MonoBehaviour
 
     public void poleDecreser()
     {
-        if(polePosition.transform.parent.name != "Cylender")
+       /* if(polePosition.transform.parent.name != "Cylender")
         {
+            return;
             //sound.Audio.PlayOneShot(sound.poleRemoverClip);
-            polePosition = polePosition.transform.parent;
+            *//*polePosition = polePosition.transform.parent;
             this.gameObject.GetComponent<Collider>().isTrigger = false;
+            if (polePosition.transform.GetChild(1).GetChild(0).GetComponent<Animator>() == null)
+                return;
+
             polePosition.transform.GetChild(1).GetChild(0).GetComponent<Animator>().SetBool("activate", true);
             polePosition.transform.GetChild(1).GetComponent<Rigidbody>().useGravity = true;
             polePosition.transform.GetChild(1).GetComponent<Rigidbody>().isKinematic = false;
             polePosition.transform.GetChild(1).GetChild(0).GetChild(1).gameObject.SetActive(true);
             Destroy(polePosition.transform.GetChild(1).gameObject, 1.5f);
-            time = shoot;
-        }
+            time = shoot;*//*
+        }*/
+
         if (polePosition.transform.parent.name == "Cylender")
         {
             ///sound.Audio.PlayOneShot(sound.poleRemoverClip);

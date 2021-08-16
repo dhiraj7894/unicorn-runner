@@ -23,7 +23,7 @@ public class _VCamChecker : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _GAMEMANAGER.gameManager.virtualCamera.SetTrigger("rotate");            
-            _GAMEMANAGER.gameManager.cm.isCameraLock  = true;
+            //_GAMEMANAGER.gameManager.cm.isCameraLock  = true;
             _GAMEMANAGER.gameManager.isPlayerInCentre = true;
             _GAMEMANAGER.gameManager.isPlayerWantToGoCentre = true;            
         }

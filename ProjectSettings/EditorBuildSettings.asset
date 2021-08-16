@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Jousting_Runner _LvlDeign_v02.unity
+    guid: 1204ea986207d384ba568ddb0b33f803
   m_configObjects: {}
